@@ -1,0 +1,123 @@
+   Copyright 2018 The original author(s)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                               ${project.name}
+                                                ----
+                                               ${project.inceptionYear}
+
+  What is it?
+  -----------
+
+  ${project.description}
+
+  Licensing
+  ---------
+
+  Please see the files called LICENSE and NOTICE
+
+  Documentation
+  -------------
+
+  The most up-to-date documentation can be found at ${project.url}.
+
+  Useful URLS
+  ----------
+
+  Home Page:          ${project.url}/
+  Source Code:        ${project.scm.url}
+  Issue Tracking:     ${project.issueManagement.url}
+
+  System Requirements
+  -------------------
+
+  JDK:
+    ${javac.target.version} or above. (see http://www.oracle.com/technetwork/java/)
+  Memory:
+    No minimum requirement.
+  Disk:
+    No minimum requirement.
+  Operating System:
+    No minimum requirement. On Windows, Windows NT and above or Cygwin is required for
+    the startup scripts. Tested on Windows XP, Fedora Core and Mac OS X.
+
+  Installation
+  ----------------
+
+** Windows 2000/XP
+
+  1) Unzip the distribution archive, i.e. ${project.build.finalName}.zip to the directory you wish to
+        install ${project.name} ${project.version}.
+        These instructions assume you chose C:\Program Files.
+        The subdirectory ${project.build.finalName} will be created from the archive.
+
+  2) Add the JTM_HOME environment variable by opening up the system properties (WinKey + Pause),
+        selecting the "Advanced" tab, and the "Environment Variables" button, then adding the JTM_HOME
+        variable in the user variables with the value
+        C:\Program Files\${project.build.finalName}.
+
+  3) In the same dialog, add the JTM environment variable in the user variables with the value %JTM_HOME%\bin.
+
+  4) In the same dialog, update/create the Path environment variable in the user variables and prepend the value
+        %JTM% to add ${project.name} available in the command line.
+
+  5) In the same dialog, make sure that JAVA_HOME exists in your user variables or in the system variables and it is
+        set to the location of your JDK, e.g. C:\Program Files\Java\1.8.0_152 and that %JAVA_HOME%\bin is in your Path
+        environment variable.
+
+  6) Open a new command prompt (Winkey + R then type cmd) and run jtm --version to verify that it is correctly installed.
+
+** Unix-based Operating Systems (Linux, Solaris and Mac OS X)
+
+  1) Extract the distribution archive, i.e. ${project.build.finalName}.tar.gz to the directory you wish to
+        install ${project.name} ${project.version}.
+        These instructions assume you chose /usr/local.
+        The subdirectory ${project.build.finalName} will be created from the archive.
+
+  2) In a command terminal, add the JTM_HOME environment variable, e.g.
+        export JTM_HOME=/usr/local/${project.build.finalName}.
+
+  3) Add the JTM environment variable, e.g. export JTM=$JTM_HOME/bin.
+
+  4) Add JTM environment variable to your path, e.g. export PATH=$JTM:$PATH.
+
+  5) Make sure that JAVA_HOME is set to the location of your JDK, e.g.
+        export JAVA_HOME=/usr/java/1.8.0_152 and that $JAVA_HOME/bin is in your PATH environment variable.
+
+  6) Run jtm --version to verify that it is correctly installed.
+
+  Execution
+  ----------------
+
+  Open the shell and type `jtm -h` to see the available options:
+
++-------------------------------------------------------------------------------+
+Usage: jtm [-chiqvVX] [-e=<epochs>] [-l=<layerSize>] [-t=<topN>]
+           <pathToJiraExport>
+Tool for analyzing Atlassian Jira issues exported to the XML feed format
+This tool does topic modelling based on word2vec and paragraph vectors
+      <pathToJiraExport>      JIRA path to be exported.
+  -c, --include-comments      Include comments.
+  -e, --epochs=<epochs>       Epochs.
+  -h, --help                  Display the usage message.
+  -i, --index                 Index.
+  -l, --layer-size=<layerSize>
+                              Layers.
+  -q, --quiet                 Log errors only.
+  -t, --top-n=<topN>          Top.
+  -v, --hierarchical-vectors  Hierarchical vectors.
+  -V, --version               Display version info.
+  -X, --verbose               Produce execution debug output.
++-------------------------------------------------------------------------------+

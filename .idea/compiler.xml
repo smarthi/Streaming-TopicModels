@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="issue-model" />
+        <module name="jira-reader" />
+        <module name="jtm-cli" />
+        <module name="jtm-core" />
+        <module name="jtm-es-indexer" />
+        <module name="jtm-pipeline" />
+        <module name="jtm-topics-writer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="issue-model" target="1.5" />
+      <module name="jira-reader" target="1.5" />
+      <module name="jtm-cli" target="1.5" />
+      <module name="jtm-core" target="1.5" />
+      <module name="jtm-es-indexer" target="1.5" />
+      <module name="jtm-pipeline" target="1.5" />
+      <module name="jtm-topics-writer" target="1.5" />
+      <module name="streaming-topics" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

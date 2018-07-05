@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/issue-model/issue-model.iml" filepath="$PROJECT_DIR$/issue-model/issue-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jira-reader/jira-reader.iml" filepath="$PROJECT_DIR$/jira-reader/jira-reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cli/jtm-cli.iml" filepath="$PROJECT_DIR$/cli/jtm-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/jtm-core.iml" filepath="$PROJECT_DIR$/core/jtm-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/es-indexer/jtm-es-indexer.iml" filepath="$PROJECT_DIR$/es-indexer/jtm-es-indexer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pipeline/jtm-pipeline.iml" filepath="$PROJECT_DIR$/pipeline/jtm-pipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topics-writer/jtm-topics-writer.iml" filepath="$PROJECT_DIR$/topics-writer/jtm-topics-writer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streaming-topics.iml" filepath="$PROJECT_DIR$/streaming-topics.iml" />
+    </modules>
+  </component>
+</project>

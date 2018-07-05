@@ -1,1 +1,5 @@
-# Streaming-TopicModels
+jtm
+===
+
+basic tool for analysis of Jira issues.
+

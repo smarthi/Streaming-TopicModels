@@ -1,0 +1,3 @@
+I-NP
+B-NP
+NP
